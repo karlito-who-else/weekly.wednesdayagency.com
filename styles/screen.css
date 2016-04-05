@@ -1,0 +1,95 @@
+html {
+	box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: inherit;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
+
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	min-height: 100vh;
+}
+
+header,
+footer,
+main {
+	padding: 1rem;
+}
+
+header,
+footer {
+	align-items: stretch;
+	display: flex;
+	flex: 0;
+	justify-content: center;
+}
+
+header {
+	height: 40vh;
+}
+
+footer {
+	height: 10vh;
+}
+
+main {
+	align-items: flex-start;
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	padding-top: 10vh;
+}
+
+nav {
+	align-items: center;
+	display: flex;
+	flex-basis: 50%;
+	flex-direction: column-reverse;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+nav a {
+	color: #000;
+	flex-basis: 25%;
+	font-size: 2rem;
+	margin-bottom: 2rem;
+	text-align: center;
+	text-decoration: none;
+}
+
+[class^="logo-"] {
+	background-color: transparent;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border: 0;
+	color: transparent;
+	font-size: 0;
+	line-height: 1;
+	text-indent: -5000px;
+}
+
+.logo-hm {
+	background-image: url(../images/header-600px.png);
+	width: 60rem;
+}
+
+.logo-wednesday {
+	background-image: url(../images/Wednesday.svg);
+	width: 20rem;
+}
